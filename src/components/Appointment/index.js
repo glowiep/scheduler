@@ -10,6 +10,7 @@ import useVisualMode from "hooks/useVisualMode";
 import Form from "./Form";
 import Confirm from "./Confirm";
 import Status from "./Status";
+import Error from "./Error";
 
 export default function Appointment(props) {
   const EMPTY = "EMPTY";
@@ -67,6 +68,17 @@ export default function Appointment(props) {
           onCancel={back}
           onSave={save}
         />)}
+      {mode === EDIT && (
+        <Form 
+        name={props.interview.student}
+        interviewer={props.interview.interviewer.id}
+        interviewers={props.interviewers}
+        onCancel={back}
+        onSave={save}
+        />
+      )}
+      {mode === SAVING && <Status message="Saving"/>}
+      {mode === DELETING && <Status message="Deleting"/>}
       {mode === CONFIRM && (
         <Confirm
           message="Are you sure you would like to delete?"
@@ -74,11 +86,6 @@ export default function Appointment(props) {
           onConfirm={destroy}
         />
       )}
-      {mode === SAVING && <Status message="saving"/>}
-      {mode === EDIT && (
-        <Form 
-          // interviewer={props.interviewer}
-        />)}
       {mode === ERROR_SAVE && (
         <Error 
           message="Could not save appointment"
