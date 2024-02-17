@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708147431703" clover="3.2.0">
-  <project timestamp="1708147431704" name="All files">
+<coverage generated="1708148936710" clover="3.2.0">
+  <project timestamp="1708148936711" name="All files">
     <metrics statements="120" coveredstatements="84" conditionals="65" coveredconditionals="43" methods="63" coveredmethods="39" elements="248" coveredelements="166" complexity="0" loc="120" ncloc="120" packages="5" files="19" classes="19"/>
     <package name="components">
       <metrics statements="23" coveredstatements="20" conditionals="6" coveredconditionals="4" methods="12" coveredmethods="10"/>
@@ -14,8 +14,8 @@
       </file>
       <file name="Button.js" path="/home/labber/lighthouse/assignments/Week_19/scheduler/src/components/Button.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="25" type="stmt"/>
-        <line num="13" count="25" type="stmt"/>
+        <line num="8" count="23" type="stmt"/>
+        <line num="13" count="23" type="stmt"/>
       </file>
       <file name="DayList.js" path="/home/labber/lighthouse/assignments/Week_19/scheduler/src/components/DayList.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -34,16 +34,16 @@
       </file>
       <file name="InterviewerList.js" path="/home/labber/lighthouse/assignments/Week_19/scheduler/src/components/InterviewerList.js">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="9" count="12" type="stmt"/>
-        <line num="10" count="12" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="22" count="12" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
       </file>
       <file name="InterviewerListItem.js" path="/home/labber/lighthouse/assignments/Week_19/scheduler/src/components/InterviewerListItem.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="7" count="12" type="stmt"/>
-        <line num="11" count="12" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="11" count="11" type="stmt"/>
       </file>
     </package>
     <package name="components.Appointment">
@@ -62,23 +62,23 @@
       </file>
       <file name="Form.js" path="/home/labber/lighthouse/assignments/Week_19/scheduler/src/components/Appointment/Form.js">
         <metrics statements="19" coveredstatements="18" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="5"/>
-        <line num="7" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="12" type="stmt"/>
+        <line num="7" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="11" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="23" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
-        <line num="27" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="35" count="12" type="stmt"/>
+        <line num="27" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="11" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
       </file>
