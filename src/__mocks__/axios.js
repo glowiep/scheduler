@@ -79,6 +79,14 @@ export default {
         });
       }  
     }
+  }),
+  put: jest.fn(url => {
+    if (url.includes("/api/appointments/")) {
+      return Promise.resolve({
+        status: 204,
+        statusText: "No Content"
+      })
+    }
   })
   // get: jest.fn(url => {
   //   if (url === "/api/days") {
@@ -95,7 +103,7 @@ export default {
   //       data: fixtures.appointments
   //     });
   //   }
-  //   if (url === "/api/interviewers") {
+  //   if (url.includes("/api/interviewers")) {
   //     return Promise.resolve({
   //       status: 200,
   //       statusText: "OK",
