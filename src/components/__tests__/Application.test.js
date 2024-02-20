@@ -33,7 +33,8 @@ describe("Application", () => {
 
     await waitForElement(() => getByText(container, "Archie Cohen"))
 
-    const appointment = getAllByTestId(container, "appointment")[0];
+    const appointments = getAllByTestId(container, "appointment");
+    const appointment = appointments[0];
     
     fireEvent.click(getByAltText(appointment, "Add"));
     
@@ -46,11 +47,18 @@ describe("Application", () => {
     fireEvent.click(getByText(appointment, "Save"));
     // debug()
     // console.log(prettyDOM(appointment))
-    // expect(getByText(appointment, "Saving")).toBeInTheDocument();
+    expect(getByText(appointment, "Saving")).toBeInTheDocument();
+   
     await waitForElementToBeRemoved (() => getByText(appointment, "Saving"));
     
     expect(getByText(appointment, "Lydia Mill-Jones")).toBeInTheDocument();
 
-  })
+    const day = getAllByTestId(container, "day").find(day => 
+      queryByText(day, "Monday")
+    );
+    // console.log(prettyDOM(day))
+    expect(queryByText(day, "no spots remaining")).toBeInTheDocument();
+  });
+
 
 })
